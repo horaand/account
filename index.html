@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewoprt" content="width=device-width, initial-scale=1"/>
+        <title>Create your account</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <main class="card" role="main">
+            <section class="pane" aria-label="Sign up form">
+                <header class="brand" aria-hidden="true">
+                    <span class="logo" aria-hidden="true"></span>
+                    <strong>Bobo</strong>
+                </header>
+
+                <h1>
+                    Create your account
+                </h1>
+
+                <p class="sub">Start create your account</p>
+
+                <form action="#" method="post" novalidate>
+                    <div class="row">
+                    <div class="field">
+                        <label for="fname">First name</label>
+                        <input id="fname" name="fname" type="text" placeholder="name"
+                         autocomplete="given-name" required />
+                    </div>
+                    <div class="field">
+                        <label for="lname">Last name</label>
+                        <input id="lname" name="lname" type="text" placeholder="last name" 
+                        autocomplete="family-name" required />
+                    </div>
+                    </div>
+
+                <div class="field">
+                    <label for="email">Work email</label>
+                    <input id="email" name="email" type="email" placeholder="yourname@company.com" 
+                    autocomplete="email" required />
+                    <p class="hint">We'll only use this to set up your account.</p>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" minlength="8"
+                         placeholder="At least 8 characters" autocomplete="new-password" required />
+                    </div>
+                    <div class="field">
+                        <label for="role">Role</label>
+                        <select id="role" name="role" required>
+                        <option value="" selected disabled>Select a role</option>
+                        <option>Developer</option>
+                        <option>Designer</option>
+                        <option>Manager</option>
+                        <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+                <label class="terms">
+                    <input type="checkbox" name="terms" required />
+                    <span>I agree to the <a href="#" aria-label="View Terms">Terms</a> 
+                        and <a href="#" aria-label="View Privacy Policy">Privacy Policy</a>.</span>
+                    </label>
+
+                    <button type="submit" class="btn">Create account</button>
+
+                    <p class="alt">Already have an account? <a href="#">Sign in</a></p>
+                    <p class="legal">
+                        By creating an account, you acknowledge that this is 
+                        a demo UI built with free, 
+                        vanilla HTML 
+                        + CSS.</p>
+
+                    <footer class="footer" aria-hidden="true">
+                    <span class="dot"></span>
+                    <span>Secure by design • No spam • Cancel anytime</span>
+                    </footer>
+                </form>
+            </section>
+
+                <aside class="hero" aria-label="Highlights">
+                    <h2 class="headline">Move faster with Bobo</h2>
+                    <p>Bring your team together with real-time collaboration,
+                         powerful integrations, and zero learning curve.</p>
+
+                    <div class="stats" role="list" aria-label="Product highlights">
+                        <article class="stat" role="listitem">
+                        <b>2x</b>
+                        <div class="sub">Faster onboarding</div>
+                        </article>
+                        <article class="stat" role="listitem">
+                        <b>99.99%</b>
+                        <div class="sub">Uptime guaranteed</div>
+                        </article>
+                        <article class="stat" role="listitem">
+                        <b>GDPR</b>
+                        <div class="sub">Ready across EU</div>
+                        </article>
+                    </div>
+                </aside>
+        </main>
+    </body>
+</html>
